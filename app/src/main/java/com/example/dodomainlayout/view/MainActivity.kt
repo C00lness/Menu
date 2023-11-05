@@ -71,9 +71,9 @@ class MainActivity : AppCompatActivity() {
         viewModel.categoryArray.observe(this, Observer {
             it.let {
                 adapter.refresh(it)
+                dbManager = dbCategoryManager(this)
+                dbManager.OpenDb()
                 if (internetFlag && it != null) {
-                    dbManager = dbCategoryManager(this)
-                    dbManager.OpenDb()
                     dbManager.delete()
                     for (cat in it.categories!!)
                         dbManager.InsertToDb(cat)
