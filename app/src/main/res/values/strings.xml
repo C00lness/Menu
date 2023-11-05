@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DodoMainLayout</string>
+    <string name="btn_1">Пицца</string>
+    <string name="btn_2">Комбо</string>
+    <string name="btn_3">Десерты</string>
+    <string name="btn_4">Напитки</string>
+    <string name="City">Москва</string>
+    <string name="BottomName_1">Меню</string>
+    <string name="BottomName_2">Профиль</string>
+    <string name="BottomName_3">Корзина</string>
+</resources>
